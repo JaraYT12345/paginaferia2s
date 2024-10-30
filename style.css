@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 50px; /* Ajusta según el tamaño de tu logo */
+    width: 50px; /* Asegúrate de que el logo tenga dimensiones iguales */
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+  
+.info-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-image {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info-text {
+    width: 50%;
+}
+
+.info-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .info-text {
+        width: 80%;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+.separador {
+    border: none; /* Sin borde predeterminado */
+    height: 1px; /* Altura de la línea */
+    background-color: #020202; /* Color de la línea */
+    margin: 1px 0; /* Margen arriba y abajo */
+    width: 100%; /* Asegúrate de que la línea ocupe todo el ancho */
+}
+
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-description {
+    padding: 15px;
+}
+
+.card-description h3 {
+    margin: 0 0 10px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #007bff; /* Color del botón */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Color del botón al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+.projects-header {
+    background-color: #000000; /* Color de fondo de la barra */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0; /* Espaciado alrededor de la barra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.projects-header h2 {
+    margin: 0; /* Elimina márgenes del encabezado */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background-color: #ffffff; /* Color del botón */
+    color: #007bff; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2100da; /* Color del botón al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden; /* Oculta el desbordamiento de la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+    width: 100%; /* Imagen cubre el ancho de la carta */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsión */
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+    padding: 0 10px 20px;
+}
+
+/* Efecto al pasar el cursor */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: white;
+    padding: 25px 20px; /* Espaciado interno */
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between; /* Distribuye los elementos */
+}
+
+.footer-logo {
+    flex: 1; /* Permite que el logo ocupe su espacio */
+}
+
+.logo {
+    height: 40px; /* Ajusta según el tamaño de tu logo */
+    width: auto; /* Mantiene la proporción del logo */
+}
+
+.footer-center {
+    text-align: center; /* Centra el texto de derechos de autor */
+    flex: 1; /* Permite que el texto ocupe su espacio */
+}
+
+.footer-left {
+    flex: 1; /* Permite que "KS TEAM" ocupe su espacio */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.footer-left p, .footer-center p {
+    margin: 0; /* Elimina márgenes */
+}
+
